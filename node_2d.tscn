@@ -1,0 +1,1550 @@
+[gd_scene format=3 uid="uid://bwpu0fcab3gdj"]
+
+[ext_resource type="Script" uid="uid://clxqf174gy8w6" path="res://node_3d.gd" id="1_wtcfe"]
+[ext_resource type="Script" uid="uid://cbw0aldrxkxlr" path="res://ROLL.gd" id="2_0e48y"]
+[ext_resource type="FontFile" uid="uid://bvgcopom6k14d" path="res://ofont.ru_Jun.ttf" id="2_hqns4"]
+[ext_resource type="Texture2D" uid="uid://guivksw8vx57" path="res://Без имени.png" id="2_x0ka3"]
+[ext_resource type="Script" uid="uid://c2gmis57ernow" path="res://control.gd" id="4_0hol4"]
+[ext_resource type="Script" uid="uid://c3sde3pjdbi71" path="res://control_2.gd" id="4_rj586"]
+[ext_resource type="Texture2D" uid="uid://2ccy6clctqlp" path="res://whiterune.png" id="5_d21ai"]
+[ext_resource type="Texture2D" uid="uid://cwh41qwwog5cw" path="res://Снимок экрана 2026-10-05 005751.png" id="5_kdubu"]
+[ext_resource type="Texture2D" uid="uid://c8uvijjtjdkex" path="res://star.png" id="5_nr8wp"]
+[ext_resource type="Texture2D" uid="uid://syu8uu4i15fc" path="res://epicrune.png" id="6_4d7sh"]
+[ext_resource type="Texture2D" uid="uid://qlhi16i54yfv" path="res://greenrune.png" id="6_d21ai"]
+[ext_resource type="Texture2D" uid="uid://dwd5tjevca1ur" path="res://legendaryrune.png" id="6_ir8iy"]
+[ext_resource type="Texture2D" uid="uid://c27ig7f1rb0yu" path="res://inverted-dice-4.png" id="6_ta5nu"]
+[ext_resource type="Texture2D" uid="uid://y4ras555f18b" path="res://mythic.png" id="10_d2bti"]
+[ext_resource type="Script" uid="uid://cl0qdldo8xdl3" path="res://control_3.gd" id="10_ta5nu"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nds2h"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nr8wp"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h1i6k"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bi6id"]
+bg_color = Color(0.06879826, 0.06879829, 0.06879823, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d2bti"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="GDScript" id="GDScript_d2bti"]
+script/source = "extends Button
+
+
+func _on_pressed():
+	$\"../Panel3\".visible = !$\"../Panel3\".visible
+"
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ei405"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6xrsr"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c0dwe"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pxpx2"]
+bg_color = Color(0, 0.8745098, 0.28627452, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ta5nu"]
+bg_color = Color(0.70286316, 0.41241428, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_78ykq"]
+bg_color = Color(0.8951275, 0.65299743, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.3366076, 0.33660766, 0.33660737, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x5kjr"]
+bg_color = Color(0.72633433, 0.52617854, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.3372549, 0.3372549, 0.3372549, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rkt6e"]
+bg_color = Color(0.9590433, 0.00051297754, 0.11943672, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0hol4"]
+bg_color = Color(0.65925854, 1, 0.6423069, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.3372549, 0.3372549, 0.3372549, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_flf07"]
+bg_color = Color(0.9748078, 0.39062864, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k73cj"]
+bg_color = Color(0.8193765, 0.32405502, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rjqkl"]
+bg_color = Color(1, 0.51562846, 0.29605675, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5whnb"]
+bg_color = Color(0, 0.8728038, 0.28573555, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rj586"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.3372549, 0.3372549, 0.3372549, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x0ka3"]
+bg_color = Color(0.9340804, 0.9340805, 0.93408036, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.3372549, 0.3372549, 0.3372549, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hqns4"]
+bg_color = Color(0.96474224, 0.96474224, 0.9647421, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.3372549, 0.3372549, 0.3372549, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4d7sh"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.3372549, 0.3372549, 0.3372549, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_un2d2"]
+bg_color = Color(0.9428228, 0.94282264, 0.94282264, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.3372549, 0.3372549, 0.3372549, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0h7mo"]
+bg_color = Color(0.9297146, 0.9297147, 0.9297146, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.3372549, 0.3372549, 0.3372549, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fs4d3"]
+bg_color = Color(0.8336807, 0, 0.0996185, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7vxoj"]
+bg_color = Color(0.63060325, 0, 0.06281914, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bhunq"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1esiv"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2r0jt"]
+bg_color = Color(0.8047426, 0.80474263, 0.8047425, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xvofd"]
+bg_color = Color(0.91228896, 0.9122889, 0.91228884, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jyycw"]
+bg_color = Color(0.16924527, 0.16924533, 0.16924518, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_moq8s"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3im1c"]
+bg_color = Color(0.9079417, 0.9079417, 0.90794164, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_moqnp"]
+bg_color = Color(0.9340804, 0.9340805, 0.93408036, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q6r6c"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qr0ht"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lwgsg"]
+bg_color = Color(0.103743516, 0.103743546, 0.10374347, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l4rrh"]
+bg_color = Color(0.10747974, 0.10747974, 0.10747967, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_khku3"]
+bg_color = Color(0.15487596, 0.154876, 0.15487587, 1)
+
+[node name="Node2D" type="Node2D" unique_id=196308861]
+script = ExtResource("1_wtcfe")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=233681740]
+
+[node name="Panel2" type="Panel" parent="CanvasLayer" unique_id=436552009]
+offset_right = 1500.0
+offset_bottom = 648.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_nds2h")
+
+[node name="БезИмени" type="Sprite2D" parent="CanvasLayer/Panel2" unique_id=1503120248]
+modulate = Color(1, 1, 1, 0.23921569)
+position = Vector2(750, 324)
+scale = Vector2(1, 0.9969231)
+texture = ExtResource("2_x0ka3")
+
+[node name="Button2" type="Button" parent="CanvasLayer" unique_id=9957544]
+offset_left = 1351.0
+offset_top = 149.0
+offset_right = 1480.0
+offset_bottom = 188.0
+theme_override_fonts/font = ExtResource("2_hqns4")
+theme_override_font_sizes/font_size = 17
+theme_override_styles/normal = SubResource("StyleBoxFlat_nr8wp")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_h1i6k")
+theme_override_styles/hover = SubResource("StyleBoxFlat_bi6id")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_d2bti")
+text = "Buy boost x2: 0.1"
+
+[node name="ColorRect46" type="ColorRect" parent="CanvasLayer/Button2" unique_id=1780489461]
+layout_mode = 0
+offset_top = 39.0
+offset_right = 129.0
+offset_bottom = 45.0
+color = Color(0.81638473, 0, 0.07717175, 1)
+
+[node name="ColorRect58" type="ColorRect" parent="CanvasLayer/Button2" unique_id=740514068]
+layout_mode = 0
+offset_top = -6.0
+offset_right = 129.0
+color = Color(0.81638473, 0, 0.07717175, 1)
+
+[node name="Button5" type="Button" parent="CanvasLayer" unique_id=797812009]
+offset_left = 1209.0
+offset_top = 232.0
+offset_right = 1479.0
+offset_bottom = 271.0
+theme_override_fonts/font = ExtResource("2_hqns4")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxFlat_nr8wp")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_h1i6k")
+theme_override_styles/hover = SubResource("StyleBoxFlat_bi6id")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_d2bti")
+text = "Buy shiny star (lvl 1)       : 5
+"
+
+[node name="ColorRect46" type="ColorRect" parent="CanvasLayer/Button5" unique_id=1153189491]
+layout_mode = 0
+offset_top = 39.0
+offset_right = 270.0
+offset_bottom = 45.0
+color = Color(0.81638473, 0, 0.07717175, 1)
+
+[node name="ColorRect58" type="ColorRect" parent="CanvasLayer/Button5" unique_id=1374152651]
+layout_mode = 0
+offset_top = -6.0
+offset_right = 270.0
+color = Color(0.81638473, 0, 0.07717175, 1)
+
+[node name="Star" type="Sprite2D" parent="CanvasLayer/Button5" unique_id=1251795743]
+position = Vector2(211, 20)
+texture = ExtResource("5_nr8wp")
+
+[node name="Button" type="Button" parent="CanvasLayer" unique_id=517918356]
+offset_left = 592.0
+offset_top = 424.0
+offset_right = 877.0
+offset_bottom = 492.0
+theme_override_fonts/font = ExtResource("2_hqns4")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_nr8wp")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_h1i6k")
+theme_override_styles/hover = SubResource("StyleBoxFlat_bi6id")
+text = "Go"
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/Button" unique_id=2013276104]
+layout_mode = 0
+offset_right = 285.0
+offset_bottom = 6.0
+color = Color(0.8452785, 0.60472995, 0.10935221, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="CanvasLayer/Button" unique_id=700514015]
+layout_mode = 0
+offset_top = 62.0
+offset_right = 285.0
+offset_bottom = 68.0
+color = Color(0.8452785, 0.60472995, 0.10935221, 1)
+
+[node name="Button6" type="Button" parent="CanvasLayer" unique_id=878238732]
+offset_left = 1147.0
+offset_top = 13.0
+offset_right = 1314.0
+offset_bottom = 78.0
+theme_override_fonts/font = ExtResource("2_hqns4")
+theme_override_font_sizes/font_size = 33
+theme_override_styles/normal = SubResource("StyleBoxFlat_nr8wp")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_h1i6k")
+theme_override_styles/hover = SubResource("StyleBoxFlat_bi6id")
+text = "collection"
+script = SubResource("GDScript_d2bti")
+
+[node name="ColorRect5" type="ColorRect" parent="CanvasLayer/Button6" unique_id=1304960355]
+layout_mode = 0
+offset_right = 167.0
+offset_bottom = 6.0
+color = Color(0, 0.46666667, 0.6745098, 1)
+
+[node name="ColorRect6" type="ColorRect" parent="CanvasLayer/Button6" unique_id=345620842]
+layout_mode = 0
+offset_top = 59.0
+offset_right = 167.0
+offset_bottom = 65.0
+color = Color(0, 0.46666667, 0.6745098, 1)
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=433009110]
+offset_left = 111.0
+offset_top = 28.0
+offset_right = 147.0
+offset_bottom = 99.0
+theme_override_fonts/font = ExtResource("2_hqns4")
+theme_override_font_sizes/font_size = 60
+text = "0"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="CanvasLayer" unique_id=1796872335]
+offset_left = 29.0
+offset_top = 26.0
+offset_right = 102.0
+offset_bottom = 95.0
+theme_override_font_sizes/font_size = 50
+text = "α - "
+
+[node name="Label3" type="Label" parent="CanvasLayer" unique_id=120017835]
+offset_left = 27.0
+offset_top = 113.0
+offset_right = 101.0
+offset_bottom = 182.0
+theme_override_font_sizes/font_size = 50
+text = "β - "
+
+[node name="Label4" type="Label" parent="CanvasLayer" unique_id=2078757572]
+offset_left = 110.0
+offset_top = 115.0
+offset_right = 146.0
+offset_bottom = 186.0
+theme_override_fonts/font = ExtResource("2_hqns4")
+theme_override_font_sizes/font_size = 60
+text = "0"
+horizontal_alignment = 1
+
+[node name="Button3" type="Button" parent="CanvasLayer" unique_id=896526831]
+offset_left = 1417.0
+offset_top = 570.0
+offset_right = 1469.0
+offset_bottom = 621.0
+theme_override_fonts/font = ExtResource("2_hqns4")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_ei405")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_h1i6k")
+theme_override_styles/hover = SubResource("StyleBoxFlat_bi6id")
+
+[node name="InvertedDice4" type="Sprite2D" parent="CanvasLayer/Button3" unique_id=1727925897]
+position = Vector2(25.999985, 26)
+scale = Vector2(0.080000035, 0.07749999)
+texture = ExtResource("6_ta5nu")
+
+[node name="Button8" type="Button" parent="CanvasLayer" unique_id=1316617261]
+visible = false
+offset_left = 1183.0
+offset_top = 309.0
+offset_right = 1481.0
+offset_bottom = 348.0
+theme_override_fonts/font = ExtResource("2_hqns4")
+theme_override_font_sizes/font_size = 17
+theme_override_styles/normal = SubResource("StyleBoxFlat_nr8wp")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_h1i6k")
+theme_override_styles/hover = SubResource("StyleBoxFlat_bi6id")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_d2bti")
+text = "Buy an additional upgrade in the tree \"α\": 15"
+
+[node name="ColorRect46" type="ColorRect" parent="CanvasLayer/Button8" unique_id=514957247]
+layout_mode = 0
+offset_top = 39.0
+offset_right = 298.0
+offset_bottom = 45.0
+color = Color(0.81638473, 0, 0.07717175, 1)
+
+[node name="ColorRect58" type="ColorRect" parent="CanvasLayer/Button8" unique_id=375618208]
+layout_mode = 0
+offset_top = -6.0
+offset_right = 298.0
+color = Color(0.81638473, 0, 0.07717175, 1)
+
+[node name="Button9" type="Button" parent="CanvasLayer" unique_id=1957766288]
+offset_left = 964.0
+offset_top = 13.0
+offset_right = 1128.0
+offset_bottom = 76.0
+theme_override_fonts/font = ExtResource("2_hqns4")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_nr8wp")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_h1i6k")
+theme_override_styles/hover = SubResource("StyleBoxFlat_bi6id")
+text = "statistics"
+
+[node name="ColorRect3" type="ColorRect" parent="CanvasLayer/Button9" unique_id=66746793]
+layout_mode = 0
+offset_right = 164.0
+offset_bottom = 6.0
+color = Color(2.9841065e-06, 0.4679839, 0.67566216, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="CanvasLayer/Button9" unique_id=108683870]
+layout_mode = 0
+offset_top = 57.0
+offset_right = 164.0
+offset_bottom = 63.0
+color = Color(2.9841065e-06, 0.4679839, 0.67566216, 1)
+
+[node name="n_persec" type="Label" parent="CanvasLayer" unique_id=587075260]
+offset_left = 295.0
+offset_top = 36.0
+offset_right = 431.0
+offset_bottom = 101.0
+theme_override_fonts/font = ExtResource("2_hqns4")
+theme_override_font_sizes/font_size = 47
+text = "(0/s)"
+horizontal_alignment = 1
+
+[node name="Panel4" type="Panel" parent="CanvasLayer" unique_id=490358939]
+visible = false
+offset_left = 415.0
+offset_top = 43.0
+offset_right = 1062.0
+offset_bottom = 593.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_6xrsr")
+
+[node name="schetα" type="Label" parent="CanvasLayer/Panel4" unique_id=403158286]
+layout_mode = 0
+offset_left = 35.0
+offset_top = 67.0
+offset_right = 58.0
+offset_bottom = 117.0
+theme_override_fonts/font = ExtResource("2_hqns4")
+theme_override_font_sizes/font_size = 37
+text = "α - "
+
+[node name="stat" type="Label" parent="CanvasLayer/Panel4" unique_id=580517966]
+layout_mode = 0
+offset_top = 5.0
+offset_right = 647.0
+offset_bottom = 28.0
+theme_override_fonts/font = ExtResource("2_hqns4")
+theme_override_font_sizes/font_size = 28
+text = "Statistics"
+horizontal_alignment = 1
+
+[node name="numbersh" type="Label" parent="CanvasLayer/Panel4" unique_id=803094714]
+layout_mode = 0
+offset_left = 95.0
+offset_top = 77.0
+offset_right = 135.0
+offset_bottom = 118.0
+theme_override_fonts/font = ExtResource("2_hqns4")
+theme_override_font_sizes/font_size = 34
+text = "0"
+horizontal_alignment = 1
+
+[node name="schetβ" type="Label" parent="CanvasLayer/Panel4" unique_id=705811291]
+layout_mode = 0
+offset_left = 34.0
+offset_top = 117.0
+offset_right = 82.0
+offset_bottom = 167.0
+theme_override_fonts/font = ExtResource("2_hqns4")
+theme_override_font_sizes/font_size = 37
+text = "β - "
+
+[node name="numbersh2" type="Label" parent="CanvasLayer/Panel4" unique_id=1175941867]
+layout_mode = 0
+offset_left = 94.0
+offset_top = 127.0
+offset_right = 134.0
+offset_bottom = 168.0
+theme_override_fonts/font = ExtResource("2_hqns4")
+theme_override_font_sizes/font_size = 34
+text = "0"
+horizontal_alignment = 1
+
+[node name="upgrade" type="Button" parent="CanvasLayer" unique_id=1444106481]
+offset_left = 1341.0
+offset_top = 12.0
+offset_right = 1473.0
+offset_bottom = 77.0
+theme_override_fonts/font = ExtResource("2_hqns4")
+theme_override_font_sizes/font_size = 39
+theme_override_styles/normal = SubResource("StyleBoxFlat_nr8wp")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_h1i6k")
+theme_override_styles/hover = SubResource("StyleBoxFlat_bi6id")
+text = "Tree"
+
+[node name="ColorRect3" type="ColorRect" parent="CanvasLayer/upgrade" unique_id=281411521]
+layout_mode = 0
+offset_right = 132.0
+offset_bottom = 6.0
+color = Color(2.8637796e-06, 0.52311647, 0.2453394, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="CanvasLayer/upgrade" unique_id=1188650043]
+layout_mode = 0
+offset_top = 59.0
+offset_right = 132.0
+offset_bottom = 65.0
+color = Color(2.8637796e-06, 0.52311647, 0.2453394, 1)
+
+[node name="tree" type="Panel" parent="CanvasLayer/upgrade" unique_id=639242761]
+visible = false
+layout_mode = 0
+offset_left = -1346.0
+offset_top = -29.0
+offset_right = 168.0
+offset_bottom = 650.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_c0dwe")
+
+[node name="Control2" type="Control" parent="CanvasLayer/upgrade/tree" unique_id=97435760]
+anchors_preset = 0
+offset_left = -6280.0
+offset_top = -9992.0
+offset_right = 7200.0
+offset_bottom = 10511.0
+script = ExtResource("4_rj586")
+
+[node name="line06" type="Panel" parent="CanvasLayer/upgrade/tree/Control2" unique_id=1060020502]
+visible = false
+layout_mode = 0
+offset_left = 6756.0005
+offset_top = 9852.001
+offset_right = 7012.6587
+offset_bottom = 9885.309
+rotation = 0.7853982
+theme_override_styles/panel = SubResource("StyleBoxFlat_pxpx2")
+
+[node name="line05" type="Panel" parent="CanvasLayer/upgrade/tree/Control2" unique_id=133994879]
+visible = false
+layout_mode = 0
+offset_left = 6928.2427
+offset_top = 10147.462
+offset_right = 7184.901
+offset_bottom = 10180.77
+rotation = 1.572445
+theme_override_styles/panel = SubResource("StyleBoxFlat_pxpx2")
+
+[node name="line04" type="Panel" parent="CanvasLayer/upgrade/tree/Control2" unique_id=1002874547]
+visible = false
+layout_mode = 0
+offset_left = 6600.0
+offset_top = 9599.0
+offset_right = 6856.658
+offset_bottom = 9632.308
+rotation = 0.7853982
+theme_override_styles/panel = SubResource("StyleBoxFlat_pxpx2")
+
+[node name="line03" type="Panel" parent="CanvasLayer/upgrade/tree/Control2" unique_id=1566906612]
+visible = false
+layout_mode = 0
+offset_left = 7095.0
+offset_top = 9879.0
+offset_right = 7351.658
+offset_bottom = 9912.308
+rotation = 2.3561945
+theme_override_styles/panel = SubResource("StyleBoxFlat_pxpx2")
+
+[node name="line01" type="Panel" parent="CanvasLayer/upgrade/tree/Control2" unique_id=1309159465]
+visible = false
+layout_mode = 0
+offset_left = 7036.0
+offset_top = 10442.0
+offset_right = 7292.658
+offset_bottom = 10475.308
+theme_override_styles/panel = SubResource("StyleBoxFlat_ta5nu")
+
+[node name="uptreea" type="Button" parent="CanvasLayer/upgrade/tree/Control2" unique_id=1334344776]
+layout_mode = 0
+offset_left = 6781.0
+offset_top = 10397.0
+offset_right = 7039.0
+offset_bottom = 10521.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_78ykq")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_x5kjr")
+theme_override_styles/hover = SubResource("StyleBoxFlat_rkt6e")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_0hol4")
+
+[node name="name0" type="Label" parent="CanvasLayer/upgrade/tree/Control2/uptreea" unique_id=1625536768]
+layout_mode = 0
+offset_top = 5.0
+offset_right = 258.0
+offset_bottom = 23.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_hqns4")
+theme_override_font_sizes/font_size = 13
+text = "1# boost x1.5α"
+horizontal_alignment = 1
+
+[node name="costs0" type="Label" parent="CanvasLayer/upgrade/tree/Control2/uptreea" unique_id=1177782117]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 86.0
+offset_right = 202.0
+offset_bottom = 109.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_hqns4")
+text = "Costs: 3α"
+horizontal_alignment = 1
+
+[node name="countup0" type="Label" parent="CanvasLayer/upgrade/tree/Control2/uptreea" unique_id=252377065]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 33.0
+offset_right = 259.0
+offset_bottom = 51.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_hqns4")
+theme_override_font_sizes/font_size = 13
+text = "(0/1)"
+horizontal_alignment = 1
+
+[node name="uptreea2" type="Button" parent="CanvasLayer/upgrade/tree/Control2" unique_id=1335287673]
+visible = false
+layout_mode = 0
+offset_left = 6781.0
+offset_top = 10030.0
+offset_right = 7039.0
+offset_bottom = 10154.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_78ykq")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_x5kjr")
+theme_override_styles/hover = SubResource("StyleBoxFlat_rkt6e")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_0hol4")
+
+[node name="name01" type="Label" parent="CanvasLayer/upgrade/tree/Control2/uptreea2" unique_id=218436932]
+layout_mode = 0
+offset_top = 5.0
+offset_right = 258.0
+offset_bottom = 23.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_hqns4")
+theme_override_font_sizes/font_size = 13
+text = "2# boost x2α"
+horizontal_alignment = 1
+
+[node name="costs01" type="Label" parent="CanvasLayer/upgrade/tree/Control2/uptreea2" unique_id=760048388]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 86.0
+offset_right = 202.0
+offset_bottom = 109.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_hqns4")
+text = "Costs: 10α"
+horizontal_alignment = 1
+
+[node name="countup01" type="Label" parent="CanvasLayer/upgrade/tree/Control2/uptreea2" unique_id=598300017]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 33.0
+offset_right = 259.0
+offset_bottom = 51.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_hqns4")
+theme_override_font_sizes/font_size = 13
+text = "(0/1)"
+horizontal_alignment = 1
+
+[node name="uptreea3" type="Button" parent="CanvasLayer/upgrade/tree/Control2" unique_id=987093818]
+visible = false
+layout_mode = 0
+offset_left = 6937.0
+offset_top = 9766.0
+offset_right = 7195.0
+offset_bottom = 9890.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_78ykq")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_x5kjr")
+theme_override_styles/hover = SubResource("StyleBoxFlat_rkt6e")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_0hol4")
+
+[node name="name02" type="Label" parent="CanvasLayer/upgrade/tree/Control2/uptreea3" unique_id=1370342001]
+layout_mode = 0
+offset_top = 5.0
+offset_right = 258.0
+offset_bottom = 23.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_hqns4")
+theme_override_font_sizes/font_size = 13
+text = "3# boost x1.5α"
+horizontal_alignment = 1
+
+[node name="costs02" type="Label" parent="CanvasLayer/upgrade/tree/Control2/uptreea3" unique_id=1989275797]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 86.0
+offset_right = 202.0
+offset_bottom = 109.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_hqns4")
+text = "Costs: 35α"
+horizontal_alignment = 1
+
+[node name="countup02" type="Label" parent="CanvasLayer/upgrade/tree/Control2/uptreea3" unique_id=1945154329]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 33.0
+offset_right = 259.0
+offset_bottom = 51.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_hqns4")
+theme_override_font_sizes/font_size = 13
+text = "(0/5)"
+horizontal_alignment = 1
+
+[node name="uptreea5" type="Button" parent="CanvasLayer/upgrade/tree/Control2" unique_id=1182466249]
+visible = false
+layout_mode = 0
+offset_left = 6645.0
+offset_top = 9766.0
+offset_right = 6903.0
+offset_bottom = 9890.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_78ykq")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_x5kjr")
+theme_override_styles/hover = SubResource("StyleBoxFlat_rkt6e")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_0hol4")
+
+[node name="name04" type="Label" parent="CanvasLayer/upgrade/tree/Control2/uptreea5" unique_id=305254456]
+layout_mode = 0
+offset_top = 5.0
+offset_right = 258.0
+offset_bottom = 23.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_hqns4")
+theme_override_font_sizes/font_size = 13
+text = "4# buy +0.5α"
+horizontal_alignment = 1
+
+[node name="costs04" type="Label" parent="CanvasLayer/upgrade/tree/Control2/uptreea5" unique_id=1395329731]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 86.0
+offset_right = 202.0
+offset_bottom = 109.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_hqns4")
+text = "Costs: 20α"
+horizontal_alignment = 1
+
+[node name="countup04" type="Label" parent="CanvasLayer/upgrade/tree/Control2/uptreea5" unique_id=160596295]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 33.0
+offset_right = 259.0
+offset_bottom = 51.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_hqns4")
+theme_override_font_sizes/font_size = 13
+text = "(0/1)"
+horizontal_alignment = 1
+
+[node name="uptreea6" type="Button" parent="CanvasLayer/upgrade/tree/Control2" unique_id=2055018094]
+visible = false
+layout_mode = 0
+offset_left = 6484.0
+offset_top = 9510.0
+offset_right = 6742.0
+offset_bottom = 9634.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_78ykq")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_x5kjr")
+theme_override_styles/hover = SubResource("StyleBoxFlat_rkt6e")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_0hol4")
+
+[node name="name05" type="Label" parent="CanvasLayer/upgrade/tree/Control2/uptreea6" unique_id=259979683]
+layout_mode = 0
+offset_top = 5.0
+offset_right = 258.0
+offset_bottom = 23.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_hqns4")
+theme_override_font_sizes/font_size = 13
+text = "5# buy β tree"
+horizontal_alignment = 1
+
+[node name="costs05" type="Label" parent="CanvasLayer/upgrade/tree/Control2/uptreea6" unique_id=1195677123]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 86.0
+offset_right = 202.0
+offset_bottom = 109.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_hqns4")
+text = "Costs: 100α"
+horizontal_alignment = 1
+
+[node name="countup05" type="Label" parent="CanvasLayer/upgrade/tree/Control2/uptreea6" unique_id=1643482803]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 33.0
+offset_right = 259.0
+offset_bottom = 51.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_hqns4")
+theme_override_font_sizes/font_size = 13
+text = "(0/1)"
+horizontal_alignment = 1
+
+[node name="secuptreea1" type="Button" parent="CanvasLayer/upgrade/tree/Control2" unique_id=522990307]
+visible = false
+layout_mode = 0
+offset_left = 7291.0
+offset_top = 10394.0
+offset_right = 7549.0
+offset_bottom = 10518.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_flf07")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_k73cj")
+theme_override_styles/hover = SubResource("StyleBoxFlat_rjqkl")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_0hol4")
+
+[node name="name?" type="Label" parent="CanvasLayer/upgrade/tree/Control2/secuptreea1" unique_id=465690894]
+layout_mode = 0
+offset_top = 5.0
+offset_right = 258.0
+offset_bottom = 23.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_hqns4")
+theme_override_font_sizes/font_size = 13
+text = "0.1# boost x3α"
+horizontal_alignment = 1
+
+[node name="costs?" type="Label" parent="CanvasLayer/upgrade/tree/Control2/secuptreea1" unique_id=824304425]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 86.0
+offset_right = 202.0
+offset_bottom = 109.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_hqns4")
+text = "Costs: 20α"
+horizontal_alignment = 1
+
+[node name="countup?" type="Label" parent="CanvasLayer/upgrade/tree/Control2/secuptreea1" unique_id=1463201336]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 33.0
+offset_right = 259.0
+offset_bottom = 51.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_hqns4")
+theme_override_font_sizes/font_size = 13
+text = "(0/1)"
+horizontal_alignment = 1
+
+[node name="Control" type="Control" parent="CanvasLayer/upgrade/tree" unique_id=980021198]
+visible = false
+custom_minimum_size = Vector2(2000, 2000)
+anchors_preset = 0
+offset_left = -6279.0
+offset_top = -9991.0
+offset_right = 7200.0
+offset_bottom = 10511.0
+pivot_offset = Vector2(9518, 10341)
+script = ExtResource("4_0hol4")
+
+[node name="line2" type="Panel" parent="CanvasLayer/upgrade/tree/Control" unique_id=1198445520]
+layout_mode = 0
+offset_left = 7119.6206
+offset_top = 10163.852
+offset_right = 7142.6206
+offset_bottom = 10494.947
+rotation = 0.69413245
+theme_override_styles/panel = SubResource("StyleBoxFlat_5whnb")
+
+[node name="uptree" type="Button" parent="CanvasLayer/upgrade/tree/Control" unique_id=413726476]
+layout_mode = 0
+offset_left = 6780.0
+offset_top = 10396.0
+offset_right = 7038.0
+offset_bottom = 10520.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_rj586")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_x0ka3")
+theme_override_styles/hover = SubResource("StyleBoxFlat_hqns4")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_0hol4")
+
+[node name="name" type="Label" parent="CanvasLayer/upgrade/tree/Control/uptree" unique_id=1189366505]
+layout_mode = 0
+offset_top = 5.0
+offset_right = 258.0
+offset_bottom = 23.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_hqns4")
+theme_override_font_sizes/font_size = 13
+text = "1# reduce the time by -0.5"
+horizontal_alignment = 1
+
+[node name="costs" type="Label" parent="CanvasLayer/upgrade/tree/Control/uptree" unique_id=178350691]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 86.0
+offset_right = 202.0
+offset_bottom = 109.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_hqns4")
+text = "Costs: 10 rolls"
+horizontal_alignment = 1
+
+[node name="countup" type="Label" parent="CanvasLayer/upgrade/tree/Control/uptree" unique_id=619642152]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 33.0
+offset_right = 259.0
+offset_bottom = 51.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_hqns4")
+theme_override_font_sizes/font_size = 13
+text = "(0/3)"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="CanvasLayer/upgrade/tree/Control" unique_id=969954231]
+layout_mode = 0
+offset_right = 92.0
+offset_bottom = 82.0
+
+[node name="uptree3" type="Button" parent="CanvasLayer/upgrade/tree/Control" unique_id=746089978]
+visible = false
+layout_mode = 0
+offset_left = 6989.0
+offset_top = 10060.0
+offset_right = 7240.0
+offset_bottom = 10184.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_4d7sh")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_un2d2")
+theme_override_styles/hover = SubResource("StyleBoxFlat_0h7mo")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_0hol4")
+
+[node name="name3" type="Label" parent="CanvasLayer/upgrade/tree/Control/uptree3" unique_id=1522691070]
+layout_mode = 0
+offset_top = 5.0
+offset_right = 258.0
+offset_bottom = 23.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_hqns4")
+theme_override_font_sizes/font_size = 13
+text = "3# Auto roll"
+horizontal_alignment = 1
+
+[node name="costs3" type="Label" parent="CanvasLayer/upgrade/tree/Control/uptree3" unique_id=1240824944]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 86.0
+offset_right = 202.0
+offset_bottom = 109.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_hqns4")
+text = "Costs: 100 rolls"
+horizontal_alignment = 1
+
+[node name="countup3" type="Label" parent="CanvasLayer/upgrade/tree/Control/uptree3" unique_id=465140835]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 33.0
+offset_right = 259.0
+offset_bottom = 51.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_hqns4")
+theme_override_font_sizes/font_size = 13
+text = "(0/1)"
+horizontal_alignment = 1
+
+[node name="Control3" type="Control" parent="CanvasLayer/upgrade/tree" unique_id=445411870]
+visible = false
+anchors_preset = 0
+offset_left = -6280.0
+offset_top = -9992.0
+offset_right = 7200.0
+offset_bottom = 10511.0
+script = ExtResource("10_ta5nu")
+
+[node name="treeup" type="Button" parent="CanvasLayer/upgrade/tree/Control3" unique_id=1736547506]
+layout_mode = 0
+offset_left = 6687.0
+offset_top = 10119.0
+offset_right = 7354.0
+offset_bottom = 10196.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_fs4d3")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_7vxoj")
+theme_override_styles/hover = SubResource("StyleBoxFlat_rkt6e")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_0hol4")
+
+[node name="buy" type="Label" parent="CanvasLayer/upgrade/tree/Control3/treeup" unique_id=1739138617]
+layout_mode = 0
+offset_left = 305.0
+offset_top = 7.0
+offset_right = 358.0
+offset_bottom = 30.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_hqns4")
+text = "buy 1β"
+
+[node name="coste" type="Label" parent="CanvasLayer/upgrade/tree/Control3/treeup" unique_id=99974860]
+layout_mode = 0
+offset_left = 292.0
+offset_top = 36.0
+offset_right = 371.0
+offset_bottom = 59.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_hqns4")
+text = "Costs: 2kα"
+
+[node name="close" type="Button" parent="CanvasLayer/upgrade/tree" unique_id=1100752626]
+layout_mode = 0
+offset_left = 1432.0
+offset_top = 26.0
+offset_right = 1483.0
+offset_bottom = 80.0
+theme_override_fonts/font = ExtResource("2_hqns4")
+theme_override_font_sizes/font_size = 33
+text = "X"
+
+[node name="alphatree" type="Button" parent="CanvasLayer/upgrade/tree" unique_id=282770198]
+layout_mode = 0
+offset_left = 1343.0
+offset_top = 25.0
+offset_right = 1402.0
+offset_bottom = 83.0
+theme_override_fonts/font = ExtResource("2_hqns4")
+theme_override_font_sizes/font_size = 36
+text = "α"
+
+[node name="alphatree2" type="Button" parent="CanvasLayer/upgrade/tree" unique_id=516832536]
+layout_mode = 0
+offset_left = 1237.0
+offset_top = 24.0
+offset_right = 1320.0
+offset_bottom = 82.0
+theme_override_fonts/font = ExtResource("2_hqns4")
+theme_override_font_sizes/font_size = 36
+text = "rolls"
+
+[node name="alphatree3" type="Button" parent="CanvasLayer/upgrade/tree" unique_id=366814944]
+visible = false
+layout_mode = 0
+offset_left = 1135.0
+offset_top = 24.0
+offset_right = 1218.0
+offset_bottom = 82.0
+theme_override_fonts/font = ExtResource("2_hqns4")
+theme_override_font_sizes/font_size = 36
+text = "β"
+
+[node name="Panel" type="Panel" parent="CanvasLayer" unique_id=2039656846]
+visible = false
+offset_left = 296.0
+offset_top = 48.0
+offset_right = 1226.0
+offset_bottom = 575.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_bhunq")
+
+[node name="runes" type="Label" parent="CanvasLayer/Panel" unique_id=654684788]
+layout_mode = 0
+offset_right = 928.0
+offset_bottom = 61.0
+theme_override_fonts/font = ExtResource("2_hqns4")
+theme_override_font_sizes/font_size = 44
+text = "Runes"
+horizontal_alignment = 1
+
+[node name="common" type="Label" parent="CanvasLayer/Panel" unique_id=771623245]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 85.0
+offset_right = 177.0
+offset_bottom = 124.0
+theme_override_fonts/font = ExtResource("2_hqns4")
+theme_override_font_sizes/font_size = 22
+text = "Common rune (1/2)"
+horizontal_alignment = 1
+
+[node name="uncommon" type="Label" parent="CanvasLayer/Panel" unique_id=1778871740]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 116.0
+offset_right = 204.0
+offset_bottom = 155.0
+theme_override_colors/font_color = Color(0.52144045, 0.8831341, 0.5565241, 1)
+theme_override_fonts/font = ExtResource("2_hqns4")
+theme_override_font_sizes/font_size = 22
+text = "Uncommon rune (1/4)"
+horizontal_alignment = 1
+
+[node name="rare" type="Label" parent="CanvasLayer/Panel" unique_id=47511944]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 148.0
+offset_right = 241.0
+offset_bottom = 179.0
+theme_override_colors/font_color = Color(0.38622138, 0.86198264, 0.93299943, 1)
+theme_override_fonts/font = ExtResource("2_hqns4")
+theme_override_font_sizes/font_size = 22
+text = "Rare rune (1/10)"
+
+[node name="epic" type="Label" parent="CanvasLayer/Panel" unique_id=1387566364]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 180.0
+offset_right = 241.0
+offset_bottom = 211.0
+theme_override_colors/font_color = Color(0.62298566, 0.6507267, 1, 1)
+theme_override_fonts/font = ExtResource("2_hqns4")
+theme_override_font_sizes/font_size = 22
+text = "Epic rune (1/25)"
+
+[node name="legendary" type="Label" parent="CanvasLayer/Panel" unique_id=403250559]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 212.0
+offset_right = 241.0
+offset_bottom = 243.0
+theme_override_colors/font_color = Color(0.9325541, 0.7118953, 0.34271488, 1)
+theme_override_fonts/font = ExtResource("2_hqns4")
+theme_override_font_sizes/font_size = 22
+text = "Legendary rune (1/50)"
+
+[node name="mythic" type="Label" parent="CanvasLayer/Panel" unique_id=1029163328]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 244.0
+offset_right = 241.0
+offset_bottom = 275.0
+theme_override_colors/font_color = Color(0.8884096, 0, 0.12829304, 1)
+theme_override_fonts/font = ExtResource("2_hqns4")
+theme_override_font_sizes/font_size = 22
+text = "Mythic rune (1/100)"
+
+[node name="roll" type="Button" parent="CanvasLayer/Panel" unique_id=931117357]
+layout_mode = 0
+offset_left = 543.0
+offset_top = 393.0
+offset_right = 721.0
+offset_bottom = 443.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_hqns4")
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = SubResource("StyleBoxFlat_1esiv")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_2r0jt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_xvofd")
+text = "Roll"
+script = ExtResource("2_0e48y")
+
+[node name="rune" type="Label" parent="CanvasLayer/Panel" unique_id=2064192376]
+layout_mode = 0
+offset_left = 509.0
+offset_top = 290.0
+offset_right = 752.0
+offset_bottom = 341.0
+theme_override_fonts/font = ExtResource("2_hqns4")
+theme_override_font_sizes/font_size = 36
+horizontal_alignment = 1
+
+[node name="counterroll" type="Label" parent="CanvasLayer/Panel" unique_id=178898287]
+layout_mode = 0
+offset_left = 567.0
+offset_top = 463.0
+offset_right = 686.0
+offset_bottom = 507.0
+theme_override_fonts/font = ExtResource("2_hqns4")
+theme_override_font_sizes/font_size = 31
+text = "Rolls: "
+horizontal_alignment = 1
+
+[node name="Keeping" type="Panel" parent="CanvasLayer/Panel" unique_id=1917947057]
+layout_mode = 0
+offset_left = 275.0
+offset_top = 223.0
+offset_right = 477.0
+offset_bottom = 468.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_jyycw")
+
+[node name="Runes" type="Label" parent="CanvasLayer/Panel/Keeping" unique_id=1483181821]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 15.0
+offset_right = 185.0
+offset_bottom = 51.0
+theme_override_fonts/font = ExtResource("2_hqns4")
+text = "(Unknown runes)"
+horizontal_alignment = 1
+
+[node name="Boost" type="Label" parent="CanvasLayer/Panel/Keeping" unique_id=2022457855]
+layout_mode = 0
+offset_left = 29.0
+offset_top = 53.0
+offset_right = 170.0
+offset_bottom = 76.0
+theme_override_fonts/font = ExtResource("2_hqns4")
+text = "(Unknown boosts)"
+horizontal_alignment = 1
+
+[node name="time" type="Label" parent="CanvasLayer/Panel" unique_id=1243325631]
+visible = false
+layout_mode = 0
+offset_left = 730.0
+offset_top = 394.0
+offset_right = 888.0
+offset_bottom = 443.0
+theme_override_font_sizes/font_size = 35
+text = "0"
+horizontal_alignment = 1
+
+[node name="Autoroll" type="Button" parent="CanvasLayer/Panel" unique_id=45101839]
+visible = false
+layout_mode = 0
+offset_left = 596.0
+offset_top = 35.0
+offset_right = 770.0
+offset_bottom = 104.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_moq8s")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_3im1c")
+theme_override_styles/hover = SubResource("StyleBoxFlat_moqnp")
+text = "Auto: off"
+
+[node name="openrune" type="Button" parent="CanvasLayer" unique_id=200896805]
+offset_left = 721.0
+offset_top = 82.0
+offset_right = 759.0
+offset_bottom = 124.0
+rotation = -1.5707964
+theme_override_fonts/font = ExtResource("2_hqns4")
+text = "<"
+metadata/_edit_use_anchors_ = true
+
+[node name="closerune" type="Button" parent="CanvasLayer" unique_id=1299483301]
+visible = false
+offset_left = 721.0
+offset_top = 82.0
+offset_right = 759.0
+offset_bottom = 124.0
+rotation = -1.5707964
+text = ">"
+
+[node name="pan" type="Panel" parent="CanvasLayer" unique_id=4556920]
+offset_left = 579.0
+offset_top = -24.0
+offset_right = 724.0
+offset_bottom = 278.0
+rotation = -1.5707964
+theme_override_styles/panel = SubResource("StyleBoxFlat_q6r6c")
+metadata/_edit_use_anchors_ = true
+
+[node name="Mythicrune" type="Sprite2D" parent="CanvasLayer/pan" unique_id=204718742]
+position = Vector2(123.972, 43.325012)
+rotation = 1.5707964
+scale = Vector2(0.15, 0.12)
+texture = ExtResource("10_d2bti")
+
+[node name="Legendaryrune" type="Sprite2D" parent="CanvasLayer/pan" unique_id=2042258664]
+position = Vector2(123.972, 83.32501)
+rotation = 1.5707964
+scale = Vector2(0.15, 0.12)
+texture = ExtResource("6_ir8iy")
+
+[node name="Epicrune" type="Sprite2D" parent="CanvasLayer/pan" unique_id=36976914]
+position = Vector2(124.972, 124.32501)
+rotation = 1.5707964
+scale = Vector2(0.15, 0.12)
+texture = ExtResource("6_4d7sh")
+
+[node name="Whiterune" type="Sprite2D" parent="CanvasLayer/pan" unique_id=1912272611]
+position = Vector2(126.97196, 244.32504)
+rotation = 1.5707964
+scale = Vector2(0.159, 0.121)
+texture = ExtResource("5_d21ai")
+
+[node name="Greenrune" type="Sprite2D" parent="CanvasLayer/pan" unique_id=669591287]
+position = Vector2(125.972, 206.32501)
+rotation = 1.5707964
+scale = Vector2(0.15, 0.129)
+texture = ExtResource("6_d21ai")
+
+[node name="Bluerune" type="Sprite2D" parent="CanvasLayer/pan" unique_id=750761641]
+position = Vector2(124.972, 166.32501)
+rotation = 1.5707964
+scale = Vector2(0.14954187, 0.12784097)
+texture = ExtResource("5_kdubu")
+
+[node name="bluelab" type="Label" parent="CanvasLayer/pan" unique_id=1666259290]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.47586203
+anchor_top = 0.40728477
+anchor_right = 0.48965517
+anchor_bottom = 0.40728477
+offset_left = 34.0
+offset_top = 20.0
+offset_right = 74.0
+offset_bottom = 59.0
+rotation = 1.5707964
+theme_override_colors/font_color = Color(0.21960784, 0.73333335, 1, 1)
+theme_override_fonts/font = ExtResource("2_hqns4")
+theme_override_font_sizes/font_size = 28
+text = "0"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="greenlab" type="Label" parent="CanvasLayer/pan" unique_id=37802364]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.48275858
+anchor_top = 0.27483442
+anchor_right = 0.4827586
+anchor_bottom = 0.27483442
+offset_left = 35.0
+offset_top = 101.0
+offset_right = 75.0
+offset_bottom = 140.0
+rotation = 1.5707964
+theme_override_colors/font_color = Color(0.2784314, 0.68235296, 0.1882353, 1)
+theme_override_fonts/font = ExtResource("2_hqns4")
+theme_override_font_sizes/font_size = 28
+text = "0"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="whitelab" type="Label" parent="CanvasLayer/pan" unique_id=414069139]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.46896547
+anchor_top = 0.14900662
+anchor_right = 0.46896553
+anchor_bottom = 0.14900662
+offset_left = 36.0
+offset_top = 178.0
+offset_right = 76.0
+offset_bottom = 217.0
+rotation = 1.5707964
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_hqns4")
+theme_override_font_sizes/font_size = 28
+text = "0"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="epiclab" type="Label" parent="CanvasLayer/pan" unique_id=1119777975]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.46896547
+anchor_top = 0.26821193
+anchor_right = 0.4827586
+anchor_bottom = 0.27152318
+offset_left = 34.0
+offset_top = 20.0
+offset_right = 74.0
+offset_bottom = 59.0
+rotation = 1.5707964
+theme_override_colors/font_color = Color(0.40392157, 0.40392157, 1, 1)
+theme_override_fonts/font = ExtResource("2_hqns4")
+theme_override_font_sizes/font_size = 28
+text = "0"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="legendarylab" type="Label" parent="CanvasLayer/pan" unique_id=151208814]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.46896553
+anchor_top = 0.13245033
+anchor_right = 0.4827586
+anchor_bottom = 0.13576159
+offset_left = 34.0
+offset_top = 20.0
+offset_right = 74.0
+offset_bottom = 59.0
+rotation = 1.5707964
+theme_override_colors/font_color = Color(1, 0.7647059, 0, 1)
+theme_override_fonts/font = ExtResource("2_hqns4")
+theme_override_font_sizes/font_size = 28
+text = "0"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="mythiclab" type="Label" parent="CanvasLayer/pan" unique_id=991863226]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.47586206
+anchor_top = 0.0033112646
+anchor_right = 0.48965517
+anchor_bottom = 0.0066225166
+offset_left = 34.0
+offset_top = 20.0
+offset_right = 74.0
+offset_bottom = 59.0
+rotation = 1.5707964
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_hqns4")
+theme_override_font_sizes/font_size = 28
+text = "0"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Panel3" type="Panel" parent="CanvasLayer" unique_id=511174227]
+visible = false
+offset_left = 285.0
+offset_top = 58.0
+offset_right = 1442.0
+offset_bottom = 599.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_qr0ht")
+
+[node name="Label" type="Label" parent="CanvasLayer/Panel3" unique_id=1597467989]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 9.0
+offset_right = 1146.0
+offset_bottom = 32.0
+theme_override_fonts/font = ExtResource("2_hqns4")
+theme_override_font_sizes/font_size = 41
+text = "collection"
+horizontal_alignment = 1
+
+[node name="pp" type="Button" parent="CanvasLayer/Panel3" unique_id=1169440803]
+layout_mode = 0
+offset_left = 67.0
+offset_top = 71.0
+offset_right = 180.0
+offset_bottom = 240.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_lwgsg")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_l4rrh")
+theme_override_styles/hover = SubResource("StyleBoxFlat_khku3")
+
+[node name="Star" type="Sprite2D" parent="CanvasLayer/Panel3/pp" unique_id=1323612826]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(58, 56)
+scale = Vector2(2.3900003, 2.42)
+texture = ExtResource("5_nr8wp")
+
+[node name="opis" type="Label" parent="CanvasLayer/Panel3/pp" unique_id=10345909]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 101.0
+offset_right = 112.0
+offset_bottom = 124.0
+theme_override_fonts/font = ExtResource("2_hqns4")
+text = "???"
+horizontal_alignment = 1
+
+[node name="Panel00" type="Panel" parent="CanvasLayer/Panel3" unique_id=1535568376]
+layout_mode = 0
+offset_left = -247.0
+offset_top = 69.0
+offset_right = -28.0
+offset_bottom = 412.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_qr0ht")
+
+[node name="nad" type="Label" parent="CanvasLayer/Panel3/Panel00" unique_id=264666845]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 124.0
+offset_right = 213.0
+offset_bottom = 188.0
+theme_override_fonts/font = ExtResource("2_hqns4")
+theme_override_font_sizes/font_size = 20
+text = "Unknown"
+horizontal_alignment = 1
+
+[node name="Star" type="Sprite2D" parent="CanvasLayer/Panel3/Panel00" unique_id=1647692715]
+visible = false
+position = Vector2(109, 67)
+scale = Vector2(2.46, 2.66)
+texture = ExtResource("5_nr8wp")
+
+[connection signal="pressed" from="CanvasLayer/Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="CanvasLayer/Button5" to="." method="_on_button_5_pressed"]
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/Button6" to="CanvasLayer/Button6" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="CanvasLayer/Button8" to="." method="_on_button_8_pressed"]
+[connection signal="pressed" from="CanvasLayer/Button9" to="." method="_on_button_9_pressed"]
+[connection signal="pressed" from="CanvasLayer/upgrade" to="." method="_on_upgrade_pressed"]
+[connection signal="pressed" from="CanvasLayer/upgrade/tree/Control2/uptreea" to="CanvasLayer/upgrade/tree/Control2" method="_on_uptreea_pressed"]
+[connection signal="pressed" from="CanvasLayer/upgrade/tree/Control2/uptreea2" to="CanvasLayer/upgrade/tree/Control2" method="_on_uptreea_2_pressed"]
+[connection signal="pressed" from="CanvasLayer/upgrade/tree/Control2/uptreea3" to="CanvasLayer/upgrade/tree/Control2" method="_on_uptreea_3_pressed"]
+[connection signal="pressed" from="CanvasLayer/upgrade/tree/Control2/uptreea5" to="CanvasLayer/upgrade/tree/Control2" method="_on_uptreea_5_pressed"]
+[connection signal="pressed" from="CanvasLayer/upgrade/tree/Control2/uptreea6" to="CanvasLayer/upgrade/tree/Control2" method="_on_uptreea_6_pressed"]
+[connection signal="pressed" from="CanvasLayer/upgrade/tree/Control2/secuptreea1" to="CanvasLayer/upgrade/tree/Control2" method="_on_secuptreea_1_pressed"]
+[connection signal="pressed" from="CanvasLayer/upgrade/tree/Control/uptree" to="CanvasLayer/upgrade/tree/Control" method="_on_uptree_pressed"]
+[connection signal="pressed" from="CanvasLayer/upgrade/tree/Control/uptree3" to="CanvasLayer/upgrade/tree/Control" method="_on_uptree_3_pressed"]
+[connection signal="pressed" from="CanvasLayer/upgrade/tree/Control3/treeup" to="CanvasLayer/upgrade/tree/Control3" method="_on_treeup_pressed"]
+[connection signal="pressed" from="CanvasLayer/upgrade/tree/close" to="." method="_on_close_pressed"]
+[connection signal="pressed" from="CanvasLayer/upgrade/tree/alphatree" to="." method="_on_alphatree_pressed"]
+[connection signal="pressed" from="CanvasLayer/upgrade/tree/alphatree2" to="." method="_on_alphatree_2_pressed"]
+[connection signal="pressed" from="CanvasLayer/upgrade/tree/alphatree3" to="." method="_on_alphatree_3_pressed"]
+[connection signal="pressed" from="CanvasLayer/Panel/roll" to="CanvasLayer/Panel/roll" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/Panel/Autoroll" to="CanvasLayer/Panel/roll" method="_on_autoroll_pressed"]
+[connection signal="pressed" from="CanvasLayer/openrune" to="." method="_on_openrune_pressed"]
+[connection signal="pressed" from="CanvasLayer/closerune" to="." method="_on_closerune_pressed"]
+[connection signal="pressed" from="CanvasLayer/Panel3/pp" to="." method="_on_pp_pressed"]
